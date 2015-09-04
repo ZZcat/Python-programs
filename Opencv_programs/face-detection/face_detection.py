@@ -52,7 +52,6 @@ if __name__ == '__main__':
     cam = cv2.VideoCapture(0)
     while True:
         _, img = cam.read()    # Take each frame
-        
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         gray = cv2.equalizeHist(gray)
          
